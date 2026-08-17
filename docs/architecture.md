@@ -1,2 +1,20 @@
-# saras-robot
- Version 1 AI mobile robot with ESP32, Raspberry Pi, LiDAR, MCP, and web dashboard
+ESP32:
+- Motor PWM
+- Motor direction
+- Encoder reading
+- Watchdog
+- Emergency stop
+
+Raspberry Pi:
+- LiDAR
+- Camera
+- Safety layer
+- Web dashboard
+- MCP server
+- Logging
+
+MacBook:
+- Ollama
+- Claude Code
+- Development
+- GitHub Desktop
