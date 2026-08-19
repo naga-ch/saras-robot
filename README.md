@@ -396,7 +396,6 @@ The design includes:
 The battery should be mounted low and close to the center of the chassis. The motor drivers should be placed near the motors to keep high-current wires short. The ESP32 should be mounted away from the motor-driver heat sink and high-current wiring.
 
 11. Side-view layout
-
                  Future LiDAR
                      │
               ┌──────┴──────┐
