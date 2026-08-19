@@ -276,7 +276,7 @@ Current development branch for:
 - GitHub Pages deployment.
 - Phase 0 changes.
 
-## GitHub Issues and milestone
+## GitHub Issues and milestones
 
 Current milestone:
 
@@ -395,20 +395,19 @@ The design includes:
 
 The battery should be mounted low and close to the center of the chassis. The motor drivers should be placed near the motors to keep high-current wires short. The ESP32 should be mounted away from the motor-driver heat sink and high-current wiring.
 
-11. Side-view layout
-
-                 Future LiDAR
-                     │
-              ┌──────┴──────┐
-              │ upper deck  │
-      camera  │ Raspberry Pi│
-        │     └─────────────┘
-  ┌─────┴────────────────────┐
-  │       form-sheet body    │
-  │       battery low        │
-  └──────────────────────────┘
-       O                    O
-            25–35 mm clearance
+11. Final view layout:
+                              LiDAR platform
+                         │
+              ┌──────────┴──────────┐
+              │   removable top deck │
+          ┌───┴──────────────────────┴───┐
+          │       sloped camera panel     │
+          │                               │
+     O────┤       central battery         ├────O
+          │                               │
+     O────┤  ESP32       motor drivers    ├────O
+          └───────────────────────────────┘
+    
 
 The future LiDAR should be installed level and high enough to see walls and furniture. The future camera should be mounted above the front bumper with a clear view ahead.
 
