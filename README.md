@@ -397,7 +397,6 @@ The battery should be mounted low and close to the center of the chassis. The mo
 
 11. Side-view layout
 
-
                  Future LiDAR
                      │
               ┌──────┴──────┐
