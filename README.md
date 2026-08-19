@@ -352,3 +352,82 @@ The immediate next steps are:
 7. Complete the ESP32 firmware plan.
 8. Gather team feedback on the dashboard.
 9. Begin hardware integration after procurement approval.
+
+## Version 1 chassis design
+
+The Version 1 robot will use a modular form-sheet chassis for low-cost prototyping.
+
+The design includes:
+
+- 4WD skid-steer layout.
+- 65 mm wheels.
+- Central low-mounted battery.
+- Side-mounted motor drivers.
+- ESP32 controller deck.
+- Removable upper electronics deck.
+- Front camera mounting position.
+- Future LiDAR mounting platform.
+- Accessible emergency-stop and main power switch.
+- Mechanical reinforcement around motor mounts.
+
+10. Top-view layout
+
+                         FRONT
+        ┌─────────────────────────────────┐
+        │       Future camera mount       │
+        │              [ K ]              │
+        │                                 │
+        │  O                         O    │
+        │  FL motor              FR motor │
+        │                                 │
+        │        ┌──────────────┐         │
+        │        │   LiFePO4    │         │
+        │        │   BATTERY    │         │
+        │        └──────────────┘         │
+        │                                 │
+        │  O                         O    │
+        │  RL motor              RR motor │
+        │                                 │
+        │     [Left driver] [Right driver]│
+        │          [ ESP32 ]              │
+        └─────────────────────────────────┘
+                          REAR
+
+The battery should be mounted low and close to the center of the chassis. The motor drivers should be placed near the motors to keep high-current wires short. The ESP32 should be mounted away from the motor-driver heat sink and high-current wiring.
+
+11. Side-view layout
+
+
+                 Future LiDAR
+                     │
+              ┌──────┴──────┐
+              │ upper deck  │
+      camera  │ Raspberry Pi│
+        │     └─────────────┘
+        │
+  ┌─────┴────────────────────┐
+  │       form-sheet body    │
+  │       battery low        │
+  └──────────────────────────┘
+       O                    O
+            25–35 mm clearance
+
+The future LiDAR should be installed level and high enough to see walls and furniture. The future camera should be mounted above the front bumper with a clear view ahead.
+
+12. Wheel and motor placement
+
+Use a left/right differential-drive arrangement:
+
+Left side:
+- Front-left motor
+- Rear-left motor
+
+Right side:
+- Front-right motor
+- Rear-right motor
+
+
+The Version 1 chassis is intentionally modular so the layout can be adjusted after the motors, battery, and electronics are received.
+
+Detailed design:
+`docs/chassis-design.md`
